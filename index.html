@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Manutenção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="margin-top: 150px;">
+        <h1 style="color: white;">Agendamento de Manutenção Preventiva</h1>
+        <form id="maintenanceForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="text">Motivo da Manutenção:</label>
+            <input type="motivo">
+            <label for="datetime">Data e Hora:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+            <button type="submit">Agendar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
